@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi Sharma - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Nidhi Sharma</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#reach-out" class="nav-link">Reach Out</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">Nidhi Sharma</h1>
+            <p class="hero-subtitle">I'm a</p>
+            <div class="hero-typing">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Masters student at Virginia Tech specializing in Software Engineering. I work across cloud systems, 
+                machine learning, and full-stack development to build scalable, user-focused solutions. 
+                Experienced in AWS/GCP, distributed data pipelines, backend APIs, and AI-powered applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="#reach-out" class="btn btn-primary"><span>Contact Me</span></a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+                <a href="resume.pdf" class="btn btn-outline" target="_blank">View Resume</a>
+            </div>
+            <p class="hero-status">Actively Looking for Job Opportunities in Software Engineering, Full Stack, Data Engineering and Data Analyst Roles</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-degree">Masters in Computer Science and Applications</h3>
+                        <h4 class="education-institution">Virginia Tech</h4>
+                        <span class="education-date">Aug 2024 - Dec 2025</span>
+                        <span class="education-location">Virginia, USA</span>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="education-degree">Bachelor of Engineering in Information Technology</h3>
+                        <h4 class="education-institution">University of Mumbai</h4>
+                        <span class="education-date">Aug 2017 - May 2021</span>
+                        <span class="education-location">Mumbai, IN</span>
+                    </div>
+                </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🦆</div>
+                    <h3 class="project-title">Ducky: AI-Powered Coding Suite & Quack MCP Server Extensions</h3>
+                    <p class="project-overview">
+                        <strong>Overview:</strong> Developed Ducky, an AI-driven productivity suite integrating 
+                        OpenAI's LLM with FastAPI and Streamlit, featuring Quick Chat, LLM-based Code Review, 
+                        Learning Assistant, Image Generation, and Voice Chat.
+                    </p>
+                    <div class="project-features">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>Extended the Quack MCP Server by implementing a pytest-based testing tool, enabling automated test execution, structured results, and containerized deployment with Docker for reproducibility</li>
+                            <li>Worked with MCP (Model Context Protocol) to integrate AI services into development workflows, enhancing debugging, testing, and interactive coding support</li>
+                            <li>Integrated OpenAI's LLM capabilities for intelligent code review and learning assistance</li>
+                            <li>Implemented voice chat functionality and image generation features</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">Autogen</span>
+                        <span class="tag">MCP</span>
+                        <span class="tag">Pytest</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nidhisharma18/Ducky" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🍽️</div>
+                    <h3 class="project-title">ByteCrew: AI-Powered Restaurant Management System</h3>
+                    <p class="project-overview">
+                        <strong>Overview:</strong> Designed an AI-powered restaurant management system integrating 
+                        self-service kiosks and a mobile app, leveraging microservices for seamless voice-based 
+                        ordering and personalized recommendations.
+                    </p>
+                    <div class="project-features">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>Incorporated NLP tools, including Whisper by OpenAI, to enable real-time voice-to-text transcription and dynamic menu suggestions, enhancing user experience</li>
+                            <li>Developed a multi-tenant database (MySQL, MongoDB) supporting multiple franchises with secure Google authentication and QR-based logins</li>
+                            <li>Built microservices architecture using React Native for mobile, Java Spring Boot for backend services, and Python FastAPI for AI services</li>
+                            <li>Integrated personalized recommendation system using NLP for intelligent menu suggestions</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">OpenAI Whisper</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nidhisharma18/KioskService" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">📚</div>
+                    <h3 class="project-title">IDEATE: AI-Powered Courseware Generator</h3>
+                    <p class="project-overview">
+                        <strong>Overview:</strong> Developed IDEATE, an AI-driven courseware generation platform that 
+                        transforms raw instructional materials into structured blueprints, lessons, and quizzes. Built 
+                        with React and Python, IDEATE uses multi-step LLM pipelines powered by Vertex AI (Gemini) to 
+                        generate consistent, high-quality educational content.
+                    </p>
+                    <div class="project-features">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>Designed structured multi-step LLM pipelines to generate course blueprints, lesson plans, summaries, and quiz questions with schema-validated outputs</li>
+                            <li>Built an intuitive React front-end with panels for file upload, blueprint generation, lesson creation, quiz generation, and exporting results</li>
+                            <li>Implemented backend services using Flask / Cloud Functions to process uploads, orchestrate async generation flows, and manage job states</li>
+                            <li>Developed parsing, chunking, and long-context handling for PDFs, slides, and text files to support accurate LLM content extraction</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Cloud Functions</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Firestore</span>
+                        <span class="tag">Vertex AI</span>
+                        <span class="tag">Gemini</span>
+                        <span class="tag">GCS</span>
+                        <span class="tag">Cloud Run</span>
+                        <span class="tag">LLM Pipelines</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nidhisharma18" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Graduate Teaching Assistant - Data Engineering</h3>
+                        <h4 class="experience-company">Virginia Tech</h4>
+                        <span class="experience-date">Aug 2025 - Present</span>
+                        <span class="experience-location">Virginia, USA</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Assist in teaching and mentoring graduate students in Data Engineering</li>
+                            <li>Guide students through hands-on assignments and labs involving AWS cloud infrastructure, Kafka streaming, Airflow DAGs, and scalable data pipelines</li>
+                            <li>Support coursework design, grading, and technical troubleshooting to help students build practical skills in distributed systems and cloud-native workflows</li>
+                                </ul>
+                                <div class="experience-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Apache Kafka</span>
+                            <span class="tag">Apache Airflow</span>
+                            <span class="tag">Data Pipelines</span>
+                            <span class="tag">Teaching</span>
+                        </div>
+                                </div>
+                            </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Research And Development Engineer</h3>
+                        <h4 class="experience-company">Virginia Tech</h4>
+                        <span class="experience-date">Nov 2024 - Present</span>
+                        <span class="experience-location">Virginia, USA</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Conduct in-depth research on 5G technologies, exploring innovative applications and advancements</li>
+                            <li>Collaborate with mentors and colleagues to design experiments and develop frameworks for testing emerging 5G solutions</li>
+                                </ul>
+                                <div class="experience-tags">
+                            <span class="tag">5G Technologies</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Framework Development</span>
+                        </div>
+                                </div>
+                            </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Research And Development Machine Learning Intern</h3>
+                        <h4 class="experience-company">A12XT Inc</h4>
+                        <span class="experience-date">May 2025 - Aug 2025</span>
+                        <span class="experience-location">Virginia, USA</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Worked on building AI-driven tools for real-time system optimization and cloud-based workflows</li>
+                            <li>Implemented and integrated backend APIs with frontend dashboards for monitoring and visualization</li>
+                            <li>Collaborated with cross-functional teams to test and deploy scalable solutions in cloud-native environments</li>
+                                </ul>
+                                <div class="experience-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Backend APIs</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Data Engineering, Management & Governance Analyst</h3>
+                        <h4 class="experience-company">Accenture Services India</h4>
+                        <span class="experience-date">Jul 2021 - Jul 2024</span>
+                        <span class="experience-location">Mumbai, IN</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Engineered and deployed an efficient ETL workflow, optimizing payroll processes and reducing processing time by 30%</li>
+                            <li>Engineered advanced Python algorithms for sentiment analysis and AI-driven chatbot functionality, increasing user engagement while reducing manual intervention</li>
+                            <li>Refined SQL queries for payroll data management, minimizing errors by 25% and improving data accuracy</li>
+                            <li>Performed automation testing using TOSCA, enhancing software performance and reliability by 20%</li>
+                            <li>Facilitated collaboration between backend and frontend teams to ensure seamless data pipeline integration</li>
+                            </ul>
+                            <div class="experience-tags">
+                            <span class="tag">ETL Pipelines</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Sentiment Analysis</span>
+                            <span class="tag">AI Chatbots</span>
+                            <span class="tag">TOSCA</span>
+                            <span class="tag">Data Governance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">Shell</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">NoSQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Multi-tenant Databases</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Amazon Web Services (AWS)</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">Cost Optimization</span>
+                        <span class="skill-tag">Cloud Simulations</span>
+                        <span class="skill-tag">Google Cloud Platform (GCP)</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-stream"></i> Data Engineering & Big Data</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Apache Kafka</span>
+                        <span class="skill-tag">Apache Airflow</span>
+                        <span class="skill-tag">ETL Pipelines</span>
+                        <span class="skill-tag">Data Visualization Dashboards</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Sentiment Analysis</span>
+                        <span class="skill-tag">AI-driven Chatbots</span>
+                        <span class="skill-tag">ML Model Deployment</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">TOSCA</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="certifications">
+                <h3><i class="fas fa-certificate"></i> Professional Certifications</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Google Cloud Certified - Cloud Digital Leader</span>
+                    <span class="skill-tag">Google Cloud Certified - Professional Data Engineer</span>
+                    <span class="skill-tag">Google Cloud Certified - Associate Cloud Engineer</span>
+                    <span class="skill-tag">Microsoft Certified - Azure Fundamentals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reach Out Section -->
+    <section id="reach-out" class="reach-out">
+        <div class="container">
+            <h2 class="section-title">Reach Out</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Virginia, USA</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:nidhisharma@vt.edu">nidhisharma@vt.edu</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (571) 461-9117</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm <strong>Nidhi Sharma</strong> a creative software engineer with a strong foundation in ML, cloud systems, and full-stack development. I'm pursuing my Master of Computer Science and Applications at Virginia Tech, where I develop AI tools, distributed data systems, and forecasting engines for real-world use.
+                    </p>
+                    
+                    <h3>I specialize in building systems that don't just work, they scale.</h3>
+                    
+                    <p>
+                        At VT, I mentor graduate students and support the Data Engineering course as a Graduate Teaching Assistant, while building pipelines using AWS, Airflow, Kafka, Docker, Python, and React.
+                    </p>
+                    
+                    <h3>Projects I'm proud of:</h3>
+                    <ul class="project-list">
+                        <li><strong>COSMIC</strong>, a real-time 5G forecasting engine</li>
+                        <li><strong>Ducky</strong>, an AI coding assistant suite</li>
+                        <li><strong>IDEATE</strong>, a generative AI courseware builder</li>
+                        <li><strong>ByteCrew</strong>, a microservices platform for NLP-driven restaurant ordering</li>
+                    </ul>
+                    
+                    <p>
+                        Previously, I worked at Accenture improving enterprise ETL workflows, automating data processes, and building ML-based insights.
+                    </p>
+                    
+                    <p>
+                        When I'm not writing code, I'm usually taking photos, hiking trails, reading something new, or swimming. I believe great engineering comes from curiosity both technical and creative.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <strong>Email:</strong>
+                        <span><a href="mailto:nidhisharma@vt.edu">nidhisharma@vt.edu</a></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Phone:</strong>
+                        <span>+1 (571) 461-9117</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Location:</strong>
+                        <span>Virginia, USA</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Degree:</strong>
+                        <span>MEng in Computer Science and Applications</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>LinkedIn:</strong>
+                        <span><a href="https://linkedin.com/nidhiisharmaaa" target="_blank">linkedin.com/nidhiisharmaaa</a></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>GitHub:</strong>
+                        <span><a href="https://github.com/nidhisharma18" target="_blank">github.com/nidhisharma18</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nidhi Sharma. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/nidhisharma18" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nidhiisharmaaa/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
